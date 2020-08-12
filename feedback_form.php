@@ -12,7 +12,7 @@ return preg_replace('/[nr|!/<>^$%*&]+/','',$form_field);
 $email_address  = filter_email_header($email_address);
 
 #Send email
-$headers = "From: $email_address\n";
+$headers = "From: $email_address ";
 $sent = mail('ujjalkumarroy7@gmail.com', 'Feedback Form Submission', $feedback, $headers);
 
 
